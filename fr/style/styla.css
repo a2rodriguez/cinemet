@@ -1,0 +1,104 @@
+        .kontenera{
+            display: flex;
+            padding: 5px;
+            
+            /*background-color: transparent;*/
+            list-style: none;
+            justify-content: space-around;
+            
+            /*color: #304D63;*/
+            color: rgb(156, 76, 23);
+            font-family: campanileflf;
+            font-size:5vw;
+            /*text-decoration: underline overline;*/
+            text-decoration: none;
+            border: 2px 2px solid blue;
+            /*text-shadow: 1px 2px rgb(51, 50, 50);*/
+            border : 2px dotted;
+            border-radius: 5px;
+            box-shadow: 3px 2px 0;
+            background-color: #789CFF;
+        }
+
+        .elemanta{
+            margin: auto;
+        }
+
+        @font-face {
+            font-family: campanileflf;
+            src: url(../fonts/campanileflf.ttf);
+        }
+
+        @font-face {
+            font-family: charposh;
+            src: url(../fonts/charposh.ttf);
+        }
+
+        .titre{
+        font-family: charposh;
+        font-size:7vw;
+        text-align: center;
+        } 
+
+    
+        /***************************** (DEBUT) FLEX METY *******************************************/        
+        .kesika{
+            
+            background-color: rgb(182, 182, 190);
+        }
+
+        .fonony80{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 3px 2px 0;
+            width: 80%;
+            margin: auto;
+            /*justify-content: space-between;*/
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .fononyliste{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 3px 2px 0;
+            width: 100%;
+            margin: auto;
+        }        
+        .fonony{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 3px 2px 0;
+            width: 60%;
+            margin: auto;
+            /*justify-content: space-between;*/
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .anatiny{
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+            border: 2px solid red;
+        }
+        .ambany{
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            align-self: flex-end;
+        }
+        /***************************** (FIN) FLEX METY *******************************************/

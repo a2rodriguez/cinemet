@@ -1,0 +1,71 @@
+/********************************** (DEBUT) 3 COLONNES avec BARRE DE SEPARATION **********************************************/
+body{
+        padding: 0;
+        margin: 0;
+        font-family: Verdana;
+    }
+.rowx{
+    display: flex;
+    padding: 25px;
+    border : 2px dotted;
+    border-radius: 5px;
+    box-shadow: 3px 2px 0;
+    height: 160px; /* 100% - 160px*/              
+    background-color: #E5D3BE; /*#717171; */
+}
+
+.roww{
+    display: flex;
+    padding: 25px;
+    border : 2px dotted;
+    border-radius: 5px;
+    box-shadow: 3px 2px 0;
+    height: 90%; /* 100% - 160px*/              
+    background-color: #E5D3BE; /*#717171; */
+}
+
+
+.roww1{
+    display: flex;
+    padding: 25px;
+    border : 2px dotted;
+    border-radius: 5px;
+    box-shadow: 3px 2px 0;
+    height: 90%;                
+    background-color: #FFF;
+}
+
+.mifindra{
+    break-after: column;
+}
+
+.kolona{
+    flex-direction: row wrap;
+    flex: 34%;
+    text-align: center;
+    columns: 3 100px; 
+    column-rule: 2px dotted;
+    font-family: Arial;
+    font-size: 13px;
+}
+.kolona li{
+    list-style: none;
+    /*text-align: center;*/
+}
+
+@media screen and (max-width: 600px){
+    .kolona{
+        display: flex;
+        flex-direction: column;
+        font-family: Arial;
+    }
+.roww{
+ height:300px;
+}
+    .kolona li{
+        list-style: none;
+        font-family: Arial;
+        text-align: center;
+    }
+}
+/********************************** (FIN) 3 COLONNES avec BARRE DE SEPARATION  **********************************************/

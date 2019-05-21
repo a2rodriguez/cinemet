@@ -1,0 +1,33 @@
+
+
+<?php
+        $originalDate = "2019-05-15";
+        echo "Date en Format brute : ".$originalDate."<br>";
+        $newDate = date("d/m/Y", strtotime($originalDate));
+        echo "Date en Format FR : ".$newDate."<br>";
+?>
+
+
+
+
+FONCTION
+-------------
+<script>
+function getLocalDate_fr(){
+        var now = new Date(); 
+        var day = now.getDay();
+        var date = now.getDate();
+        var month = now.getMonth();
+        var year = now.getFullYear();
+        var DOW=new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+        var MON=new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
+        return DOW[day] + ' ' + date + ' ' + MON[month] + ' ' + year+'.';
+}
+</script>
+
+
+APPEL
+-------
+<script language="JavaScript" type="text/JavaScript">
+document.write(getLocalDate_fr());
+</script>

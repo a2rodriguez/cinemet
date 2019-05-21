@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RESAKA FLEXBOX</title>
+        <meta charset="utf-8">
+        <!-- Source : https://la-cascade.io/flexbox-guide-complet/ -->
+        <style>
+        .header, .footer{
+                display: flex;
+                
+                flex:1 100%;
+                background-color: #ccc;
+                list-style: none;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+        .menu{
+            
+            display: flex;
+            flex:1 100%;
+            padding:20px;
+            background-color: #ccc;
+            list-style: none;
+            justify-content: space-around;
+            
+        }
+        .menu >li{
+            flex:1;
+        }
+        .fonony{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 3px 2px 0;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        .anatiny{
+            padding: 10px;
+            margin: auto;
+            
+            align-items: center;
+            border: 2px solid red;
+        }
+        .ambany{
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+            background-color: brown;
+            border: 2px solid blue;
+            
+            
+        }
+        </style>
+    </head>
+    <body>
+        
+        <nav>
+        <ul class="menu">
+            <li>Accueil</li>
+            <li>Films</li>
+            <li>Contenu</li>
+            <li>Contact</li>
+            <li>Connexion</li>
+        </ul>
+        </nav>
+        
+        <h1>LOHATENY</h1>
+        <div class="fonony">
+            <div class="anatiny">
+                <h3>SORATRA VOALOHANY</h3>
+            </div>
+            <div class="anatiny">
+                <h3>SORATRA FAHAROA</h3>
+            </div>
+            <div class="anatiny">
+                    <h3>SORATRA FAHATELO</h3>
+                </div>
+            <br><br>
+            <div class="ambany">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G-Ldfp_5lmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </body>
+</html>

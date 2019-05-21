@@ -1,0 +1,120 @@
+BDD Films
+------------
+#id_film
+titre
+categorie
+cat_csa
+durée
+infos
+avis
+photo
+
+$titre = $_POST["titre"] ;
+$categorie = $_POST["categorie"] ;
+$csa = $_POST["catcsa"] ;
+$duree = $_POST["duree"] ;
+$info = $_POST["synopsis"] ;
+$avis = $_POST["notes"] ;
+$photo = $_POST["photo"] ;
+$photo = $_POST["photo"] ;
+
+
+CATEGORIE
+#id_cat
+description
+
+
+GENRE
+#ID_genre
+description
+
+Exemple de GENRE
+================
+
+Drame
+Comédie
+Thriller
+Film d'action
+Film fantastique
+Film d'horreur
+Film de science fiction
+Polar
+Film d'époque
+Film d'animation
+Conte
+Western
+Parodie
+Comédie musicale
+Documentaire
+Blockbuster
+Road movie
+Slasher
+
+
+
+EXEMPLE CAT_CSA (Voir : https://www.csa.fr/Proteger/Protection-de-la-jeunesse-et-des-mineurs/La-signaletique-jeunesse)
+================
+>> id_csa
+-10
+-12
+-16
+-18
+>> picto
+
+>> Signification
+
+>> Horarires de diffusion
+
+
+CONTACT
+-------
+#id_contact
+nom
+prenom
+adresse
+email
+telephone
+
+
+NEWSLETTER
+----------
+#id_news
+adr_email
+
+
+>>>>>>>------------- BONUS -------------<<<<<<<<<<
+REALISATEURS
+------------
+#id_real
+nom
+liste_categorie
+pays
+
+
+
+ACTEURS
+--------
+#id_act
+nom
+pays
+
+
+
+
+
+
+
+
+-----------------------------
+Affichage images
+
+<?php
+ include ("connexion.php");
+ $req = "SELECT img_nom, img_id " .
+	"FROM images ORDER BY img_nom";
+ $ret = mysql_query ($req) or die (mysql_error ());
+ while ( $col = mysql_fetch_row ($ret) )
+ {
+     echo "<a href=\"apercu.php?id=" . $col[1] . "\">" . $col[0] . "</a><br />";
+ }
+?>
