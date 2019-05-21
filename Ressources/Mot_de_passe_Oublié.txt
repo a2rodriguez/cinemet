@@ -1,3 +1,0 @@
-MOT DE PASSE oublié :
---------------------
-Source : https://www.commentcamarche.net/forum/affich-23169698-script-php-recuperation-mot-de-passe-oublie#answers
